@@ -1,0 +1,44 @@
+*{
+    background-color: rgb(255, 253, 251);
+    font-family: 'Roboto', sans-serif;
+}
+
+header div{
+    background: rgba(255, 212, 71, 0.534);
+}
+
+header p{
+    color: #024902;
+}
+
+.sottotitolo hr{
+    border: 1px solid #ffd04f;
+}
+
+#simply{
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #024902;
+}
+
+h1{ 
+    color: #220505;
+}
+
+.nomeimg{
+    color:#c4bfbf;
+}
+
+div a{
+    color: #02c483;
+}
+
+div span{
+    color: brown;
+}
+
+div hr{
+    border: 1px solid #8dffff;
+}
+
+footer a{color: #02c483;;}
