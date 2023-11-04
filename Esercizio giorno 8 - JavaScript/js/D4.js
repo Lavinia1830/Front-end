@@ -115,21 +115,20 @@ reverseString("EPICODE");
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let string = "sono una variabile di tipo string di epicode";
-function upperFirst(string){
-    let words = string.split(" ");
-    let Maiscolo = "";
-    for(let i=0; i<words.length; i++){
-        let singleWord = words[i];
-        Maiscolo += singleWord.charAt(0).toUpperCase() + singleWord.slice(1) + "";
-        if (i<words.length - 1){
-            Maiscolo += " ";
+function upperFirst(inputString) {
+    const words = inputString.split(' ');
+    const capitalizedWords = [];
+      for (const word of words) {
+        if (word.length > 0) {
+          const capitalizedWord = word.charAt(0).toUpperCase() + word.slice(1);
+          capitalizedWords.push(capitalizedWord);
         }
+      }
+    return capitalizedWords.join(' ');
     }
-    return Maiscolo;
-}
-console.log(upperFirst(string));
-
+    const inputString = "questa è una stringa di esempio";
+    const result1 = upperFirst(inputString);
+    console.log(result1);
 
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
