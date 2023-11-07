@@ -140,7 +140,7 @@ function upperFirst(inputString) {
 function cutString(string1) {
     return string1.slice(1, -1);
 }
-let result = cutString ("HELLO WORLD");
+const result = cutString ("HELLO WORLD");
 console.log(result);
 
 
