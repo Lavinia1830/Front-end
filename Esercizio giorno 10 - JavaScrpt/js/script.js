@@ -1,8 +1,9 @@
 /* ESERCIZIO 1
     Scrivi una funzione per cambiare il titolo della pagina in qualcos'altro
 */
-let h1 = document.querySelector("h1");
+
 const changeTitle = function () {
+    let h1 = document.querySelector("h1");
     return h1.innerText = "Questo è un altro titolo principale della pagina";
 }
 console.log(changeTitle(h1.innerText));
@@ -20,8 +21,9 @@ console.log(addClassToTitle(h1));
 /* ESERCIZIO 3
     Scrivi una funzione che cambi il testo dei p figli di un div
 */
-let p = document.querySelector("div p");
+
 const changePcontent = function () {
+    let p = document.querySelector("div p");
     return p.innerText = "Questo è un paragrafo di una pagina HTML";
 }
 console.log(changePcontent(p.innerText));
