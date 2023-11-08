@@ -205,7 +205,7 @@ const movies = [
   },
   {
     Title: 'Avengers: Endgame',
-    Year: 2019,
+    Year: '2019',
     imdbID: 'tt4154796',
     Type: 'movie',
     Poster:
