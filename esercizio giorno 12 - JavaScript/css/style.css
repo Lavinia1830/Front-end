@@ -1,0 +1,27 @@
+html{
+    background-color: #440084;
+    text-align: center;
+}
+h1{
+    color: violet;
+}
+#numberTombola{
+    margin: 0 10px 10px 10px;
+}
+div.cellaNumber{
+    display: inline-block;
+    padding: 20px;
+    border: 1px solid black;
+}
+.colorCella{
+    background-color: red;
+}
+
+#button{
+    padding: 20px;
+    border-radius: 50px;
+    font-size: 20px;
+}
+.colorCella{
+    background-color: aqua;
+}
