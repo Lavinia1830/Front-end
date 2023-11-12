@@ -5,23 +5,17 @@ html{
 h1{
     color: violet;
 }
-#numberTombola{
-    margin: 0 10px 10px 10px;
+table{
+    margin: auto;
 }
-div.cellaNumber{
-    display: inline-block;
-    padding: 20px;
-    border: 1px solid black;
+td{
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
 }
-.colorCella{
-    background-color: red;
-}
-
 #button{
     padding: 20px;
     border-radius: 50px;
     font-size: 20px;
-}
-.colorCella{
-    background-color: aqua;
+    margin-top: 20px;
 }
