@@ -279,3 +279,14 @@ footer a {
     address{ margin: 0 155px;}
 }
 
+@media print{
+    body{
+        background-image: none;
+    }
+    header, iframe, section, aside, footer{
+        display: none;
+    }
+    table{
+        margin: 0 ;
+    }
+}
