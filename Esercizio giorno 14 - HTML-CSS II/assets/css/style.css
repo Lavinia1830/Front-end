@@ -388,75 +388,26 @@ footer a {
 }
 
 /*Esercizio*/
-article img{
-  float: left;
-  margin: 10px;
-}
-@media screen and (min-width: 800px) {
-    img + p{
-    margin-bottom: 35px;
-  }
-  h1 + img {
-    position: relative;
-    top: -60px;
-    left: 450px;
-    width: 515px;
-    opacity: 0.6;
-  }
-}
-@media screen and (min-width: 1200px) {
-  img + p{
-  margin-bottom: 30px;
-  }
-  h1 + img {
-  position: relative;
-  top: -60px;
-  left: 450px;
-  width: 515px;
-  opacity: 0.6;
-  }
-  i.fa-tag{
-    float: right;
-    font-size: 4em;
-    color: rgba(206,206,206);
-  }
-}
-@media screen and (min-width: 500px) {
-  h1 + img {
-    position: relative;
-    top: -53px;
-    right: 10px;
-    width: 430px;
-    opacity: 0.6;
-  }
-  i.fa-tag{
-    float: right;
-    font-size: 4em;
-    color: rgba(206,206,206);
-  }
-}
-@media screen and (min-width: 700px) {
-  h1 + img {
-    position: relative;
-    top: -60px;
-    width: 515px;
-    opacity: 0.6;
-  }
-  .social i.fa-square-plus{
-    position: fixed;
-    right: 0;
-    top: 0;
-  }
-  .calendario i.fa-solid{
-    position: fixed;
-    right: 0;
-    top: 60px;
-  }
-}
 header{
   position: sticky;
   top: 0;
   z-index: 1;
+}
+#title{
+  display: inline-block;
+  text-align: left;
+  position: relative;
+  margin-bottom: 3rem ;
+}
+
+h1 span{
+  display: block;
+}
+#title img {
+  opacity: 50%;
+  width: 100%;
+  position: absolute;
+  bottom: 1.4rem;
 }
 section h2{
   position: absolute;
@@ -518,3 +469,44 @@ i.fa-square-plus{
   padding: 10px;
 }
 
+@media screen and (min-width: 800px) {
+  img + p{
+  margin-bottom: 35px;
+}
+}
+@media screen and (min-width: 1200px) {
+#title h1 span{
+  display: inline-block;
+}
+img + p{
+margin-bottom: 30px;
+}
+#title img{
+  width: 52%;
+  right: 0.8em;
+}
+i.fa-tag{
+  float: right;
+  font-size: 4em;
+  color: rgba(206,206,206);
+}
+}
+@media screen and (min-width: 500px) {
+i.fa-tag{
+  position: absolute;
+  font-size: 4em;
+  color: rgba(206,206,206);
+}
+}
+@media screen and (min-width: 700px) {
+.social i.fa-square-plus{
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+.calendario i.fa-solid{
+  position: fixed;
+  right: 0;
+  top: 60px;
+}
+}
