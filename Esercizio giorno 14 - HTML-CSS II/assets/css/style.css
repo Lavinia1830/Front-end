@@ -399,7 +399,6 @@ header{
   position: relative;
   margin-bottom: 3rem ;
 }
-
 h1 span{
   display: block;
 }
@@ -408,6 +407,13 @@ h1 span{
   width: 100%;
   position: absolute;
   bottom: 1.4rem;
+}
+.imgLeft{
+  float: left;
+  margin: 10px 20px;
+}
+img + p{
+  clear: right;
 }
 section h2{
   position: absolute;
@@ -468,35 +474,16 @@ i.fa-square-plus{
   text-align: center;
   padding: 10px;
 }
-
-@media screen and (min-width: 800px) {
-  img + p{
-  margin-bottom: 35px;
-}
-}
-@media screen and (min-width: 1200px) {
-#title h1 span{
-  display: inline-block;
-}
-img + p{
-margin-bottom: 30px;
-}
-#title img{
-  width: 52%;
-  right: 0.8em;
-}
-i.fa-tag{
-  float: right;
-  font-size: 4em;
-  color: rgba(206,206,206);
-}
-}
 @media screen and (min-width: 500px) {
-i.fa-tag{
-  position: absolute;
-  font-size: 4em;
-  color: rgba(206,206,206);
-}
+  img + p{
+    clear: right;
+  }
+  /*posiziono le etichette a destra del contenuto*/
+  i.fa-tag{
+    float: right;
+    font-size: 4em;
+    color: rgba(206,206,206);
+  }
 }
 @media screen and (min-width: 700px) {
 .social i.fa-square-plus{
@@ -509,4 +496,27 @@ i.fa-tag{
   right: 0;
   top: 60px;
 }
+}
+@media screen and (min-width: 800px) {
+  img + p{ /*selezioni il fratello adiacente (attaccato)*/
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  img + p{
+    margin-bottom: 30px;
+  }
+  #title h1 span{
+    display: inline-block;
+  }
+  #title img{
+    width: 52%;
+    right: 0.8em;
+  }
+  /*posiziono le etichette a destra del contenuto*/
+    i.fa-tag{
+      float: right; 
+      font-size: 4em;
+      color: rgba(206,206,206);
+    }
 }
