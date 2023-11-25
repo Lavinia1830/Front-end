@@ -1,15 +1,15 @@
 body{
-    background: #666;
-    margin: 0;
-    font-family: 'Indie Flower';
+    font: 1em 'Indie Flower';
+    overflow-x: hidden;
 }
 .container{
+    background: #666;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
     justify-content: space-evenly;
-    align-items: center;
-    margin: 2em 0;
+    flex-wrap: wrap;
+    min-height: 100vh;
 }
 .box1, 
 .box2, 
@@ -24,29 +24,15 @@ body{
     justify-content: center;
     flex-flow: column;
     margin: 1.5em 1.5em;
-    box-shadow: 5px 5px 10px 0px #000000;
-    animation: miaFunc 0.5s ease-in-out;
+    box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+    transition: transform 0.1s ease-in-out, box-shadow 0.2s ease-out;
+    animation: miaFunc 1s;
 }
-.box1 p, 
-.box2 p, 
-.box3 p, 
-.box4 p, 
-.box5 p, 
-.box6 p, 
-.box7 p, 
-.box8 p{
+.container h2{
     font-weight: bold;
     font-size: 2em;
-    padding-bottom: 0.5em;
 }
-.box1 p.text,
-.box2 p.text,
-.box3 p.text,
-.box4 p.text,
-.box5 p.text,
-.box6 p.text,
-.box7 p.text,
-.box8 p.text{
+.container p{
     font-size: 1.5em;
     font-weight: normal;
 }
@@ -55,9 +41,8 @@ body{
     height: 200px;
     background: rgb(189,189,163);
     background: linear-gradient(0deg, rgba(189,189,163,1) 0%, rgba(251,252,202,1) 47%);
-    transform: rotate(-5deg);
-    transition: transform 2s ease;
-    animation: miaFunc 1s ease-in-out 0.5s 1 alternate
+    transform: rotate(-4deg);
+    animation-delay: 0.5s;
 }
 .box2{
     width: 250px;
@@ -65,8 +50,7 @@ body{
     background: rgb(158,181,161);
     background: linear-gradient(0deg, rgba(158,181,161,1) 0%, rgba(202,252,203,1) 47%);
     transform: rotate(4deg);
-    transition: transform 2s ease;
-    animation: miaFunc 1.2s ease-in-out 0.5s 1 alternate
+    animation-delay: 0.4s;
 }
 .box3{
     width: 250px;
@@ -74,8 +58,7 @@ body{
     background: rgb(139,140,155);
     background: linear-gradient(0deg, rgba(139,140,155,1) 0%, rgba(201,201,247,1) 47%);
     transform: rotate(-5deg);
-    transition: transform 2s ease;
-    animation: miaFunc 1.4s ease-in-out 0.5s 1 alternate
+    animation-delay: 0.3s;
 }
 .box4{
     width: 250px;
@@ -83,8 +66,7 @@ body{
     background: rgb(158,181,161);
     background: linear-gradient(0deg, rgba(158,181,161,1) 0%, rgba(202,252,203,1) 47%);
     transform: rotate(10deg);
-    transition: transform 2s ease;
-    animation: miaFunc 1.6s ease-in-out 0.5s 1 alternate
+    animation-delay: 0.9s;
 }
 .box5{
     width: 250px;
@@ -92,8 +74,7 @@ body{
     background: rgb(189,189,163);
     background: linear-gradient(0deg, rgba(189,189,163,1) 0%, rgba(251,252,202,1) 47%);
     transform: rotate(-3deg);
-    transition: transform 2s ease;
-    animation: miaFunc 1.8s ease-in-out 0.5s 1 alternate
+    animation-delay: 0.8s;
 }
 .box6{
     width: 250px;
@@ -101,8 +82,7 @@ body{
     background: rgb(139,140,155);
     background: linear-gradient(0deg, rgba(139,140,155,1) 0%, rgba(201,201,247,1) 47%);
     transform: rotate(-10deg);
-    transition: transform 2s ease;
-    animation: miaFunc 2s ease-in-out 0.5s 1 alternate
+    animation-delay: 0.7s;
 }
 .box7{
     width: 250px;
@@ -110,8 +90,7 @@ body{
     background: rgb(189,189,163);
     background: linear-gradient(0deg, rgba(189,189,163,1) 0%, rgba(251,252,202,1) 47%);
     transform: rotate(-4deg);
-    transition: transform 2s ease;
-    animation: miaFunc 2.2s ease-in-out 0.5s 1 alternate
+    animation-delay: 0.6s;
 }
 .box8{
     width: 250px;
@@ -119,40 +98,38 @@ body{
     background: rgb(158,181,161);
     background: linear-gradient(0deg, rgba(158,181,161,1) 0%, rgba(202,252,203,1) 47%);
     transform: rotate(3deg);
-    transition: transform 2s ease;
-    animation: miaFunc 2.4s ease-in-out 0.5s 1 alternate
+    animation-delay: 1s;
 }
-.box1:hover,
-.box2:hover,
-.box3:hover,
-.box4:hover,
-.box5:hover,
-.box6:hover,
-.box7:hover,
-.box8:hover{
-    transform: scale(1.3);
+.container div:hover{
+    transform: scale(1.15);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    cursor: pointer;
+
 }
 
 @keyframes miaFunc{
-    0%{
+    0% {
         opacity: 0;
-        transform: translateY(-30px);
-        
+        transform: scale(10);
     }
-    10%{
+    50% {
+        opacity: 0;
+        transform: scale(10);
+    }
+    
+    55% {
         opacity: 1;
-        transform: translateY(0px);
+        transform: scale(1.1);
     }
-    20%{
+    
+    65% {
         opacity: 1;
-        transform: translateY(0px);
+        transform: scale(0.9);
     }
-    34%{
-        opacity: 0 ;
-        transform: translateY(30px);
-    }
-    100%{
-        opacity: 0 ;
-        transform: translateY(20px);
+    70% {
+        opacity: 1;
+        transform: scale(1);
     }
 }
+    
