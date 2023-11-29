@@ -1,0 +1,23 @@
+.yellow{
+    background: yellow;
+}
+.larghezza {
+    width: 500px;
+}
+/*Breackpoint medio = display tablet*/
+@media (min-width: 768px) {
+    .blue{
+        background: blue;
+    } 
+    .colonne{
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media screen and (max-width: 1023px) {
+    .colonne{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
