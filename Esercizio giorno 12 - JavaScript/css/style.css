@@ -1,0 +1,21 @@
+html{
+    background-color: #440084;
+    text-align: center;
+}
+h1{
+    color: violet;
+}
+table{
+    margin: auto;
+}
+td{
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+}
+#button{
+    padding: 20px;
+    border-radius: 50px;
+    font-size: 20px;
+    margin-top: 20px;
+}
