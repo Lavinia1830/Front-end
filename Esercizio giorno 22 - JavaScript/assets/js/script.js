@@ -1,12 +1,12 @@
 
-document.addEventListener("DOMContentLoaded", function() {
+
     //Carica il valore precedentemente salvato, se presente
     let valoreSalvato = localStorage.getItem("nomeUtente");
     if (valoreSalvato){
         document.querySelector("#valoreSalvato").innerText = valoreSalvato; /*il valore precedentemente salvato se presente, se risfescio la pagina rimane nell'input e nello span con id valoreSalvato*/
         document.querySelector("#nomeInput").value = valoreSalvato;
     }
-});
+
 
 function salvaValore(){ /*questa funzione è per salvare l'input nome che inseriamo*/
     let nomeInputValue = document.querySelector("#nomeInput").value; /*prendere il valore che inserisce l'utente*/
