@@ -9,8 +9,8 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function salvaValore(){ /*questa funzione è per salvare l'input nome che inseriamo*/
-    let nomeInputValue = document.querySelector("#nomeInput").value;
-    if (nomeInputValue.trim() !== "") {/*questo if verifica se l'imput è pieno mostra il primo alert e aggiunge il nome se non scrivi niente si attiva il secondo alert */
+    let nomeInputValue = document.querySelector("#nomeInput").value; /*prendere il valore che inserisce l'utente*/
+    if (nomeInputValue.trim() !== "") {/*questo if verifica se l'input è pieno mostra il primo alert e aggiunge il nome se non scrivi niente si attiva il secondo alert */
         localStorage.setItem("nomeUtente", nomeInputValue); /*questa proprietà salva i dati in memoria*/
         document.querySelector("#valoreSalvato").innerText = nomeInputValue; /*l'input inserito viene salvato nello span con id valoreSalvato */
         alert("Valore salvato con successo!"); /*se hai inserito bene il nome ti avverte con alert*/
