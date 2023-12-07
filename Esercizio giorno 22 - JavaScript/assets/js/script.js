@@ -27,6 +27,7 @@ function rimuovereValore(){ /*questa funzione è per rimuovere l'input che abbia
 }
 
 /*Funzione timer per avviare il contatore di tempo */
+
 function startTimer(){
     let seconds = 0; /*il timer parte da 0*/
     let timer = document.querySelector("#timer"); /*assegno alla variabile timer all'id timer*/
@@ -40,7 +41,7 @@ function startTimer(){
     setInterval(updateTimer, 1000); /*questo è il contatore dei secondi*/
 
     //Controlla se esiste un valore salvato in sessionStorage per il contatore.
-    let timerValue = sessionStorage.getItem('timer_value');
+    let timerValue = sessionStorage.getItem('timer_value') ; 
     if (timerValue !== null) {
         document.document.querySelector('#timer').textContent = timerValue + ' secondi';
     }
