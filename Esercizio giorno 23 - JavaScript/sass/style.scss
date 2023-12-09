@@ -1,0 +1,10 @@
+@import "override-bootstrap";
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.card-body>:nth-last-child(1) {
+    margin-top: auto;
+}
