@@ -14,11 +14,10 @@ xhr.onreadystatechange = function(){
         obj.forEach(e => { //quando dobbiamo scrivere i comadi in HTML
             let card = document.querySelector('#books-wrapper');
             
-        card.innerHTML +=
+            card.innerHTML +=
             `<div class="col">
                 <div class="card shadow-sm h-100">
                     <img src="${e.img}" class="card-img-top" alt="${e.title}">
-                    <div class="card-body">
                 <div class="card-body">
                     <h5 class="card-title">${e.title}</h5>
                     <p class="card-text badge rounded-pill text-bg-dark">${e.category}</p>
