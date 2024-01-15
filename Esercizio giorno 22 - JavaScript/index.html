@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center my-3">Esercizi su JSON e Storage</h1>
+        <div>
+            <p>Contatore di tempo: <span id="timer"></span></p>
+        </div>
+        <div class="my-3" id="petForm">
+            <form>
+                <div class="row mb-3">
+                    <div class="col-sm">
+                        <label for="nomeInput" class="form-label">Nome:</label>
+                        <input type="text" class="form-control" id="nomeInput" placeholder="Inserisci il tuo nome" aria-label="yourname">
+                    </div>
+                    <div class="col-sm">
+                        <button type="button" class="btn btn-success w-100" onclick="salvaValore()">Salva</button>
+                    </div>
+                    <div class="col-sm">
+                        <button type="button" class="btn btn-danger w-100" onclick="rimuovereValore()">Rimuovi</button>
+                    </div>
+                </div>
+            </form>
+            <div>
+                <label for="valoreSalvato" class="form-label">Valore predentemente salvato è:</label>
+                <span id="valoreSalvato"></span>
+            </div>
+            
+        </div>
+    </div>
+    
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+/* IMPOSTAZIONI GENERALI */
+    html{
+        background: white url(../img/sfondo.png) repeat center top; /*prossima volta lo sfondo lo devo mettere nel body*/
+        font-family: 'Poppins', sans-serif;
+    }
+/* HEADER */
+    header{
+        background: rgb(9,109,121);
+        background: linear-gradient(0deg, rgba(9,109,121,1) 0%, rgba(5,140,191,1) 100%);
+        text-align: center;
+        padding: 10px;
+        margin: auto;
+        width: 400px;
+        box-shadow: 5px 5px 5px gray;
+    }
+    header img{
+        text-align: center;
+
+    }
+    header div p{
+        color: aliceblue;
+        font-size: 1.3em;
+    }
+    nav{
+        text-align: center;
+    }
+    ul{
+        padding-inline-start: 0; /*questo elimina il padding laterale sinistro*/
+    }
+    header nav li{
+        list-style: none;
+    }
+    header a{
+        color: aliceblue;
+        text-decoration: none;
+    }
+/* MAIN */
+    main{
+        background-color: #ffffff;
+        box-shadow: 5px 5px 5px gray;
+        border: 1px solid #dad8d8;
+        padding:15px 25px;
+        margin: 30px;
+    }
+/* ELEMENTI NEL MAIN - ARTICLE */
+    
+    main article p:first-of-type{
+        color: #9c9c9c;
+        font-size: 1.2em;
+    }
+    h1{
+        font-size: 2em;
+    }
+    main article strong{
+        color: rgb(150, 19, 150)
+    }
+    main article p{
+        font-size: 1.2em;
+    }
+    main article ul li{
+        list-style-type: disc;
+        font-size: 1.2em;
+    }
+    main article code{
+        font-size: 1.1em;
+        background-color: #e7e5e5;
+        border: 1px solid gray;
+        border-radius: 5px;
+    }
+    main article ol li{
+        list-style-type:decimal;
+        font-size: 1.2em;
+    }
+    #link{
+        color: rgb(0, 217, 255);
+    }
+    .video{
+        text-align: center;
+    }
+    iframe{
+        border-radius: 20px;
+        margin:0 auto;
+    }
+    section{
+        background-color: #e7e7e7;
+        color: black;
+    }
+    section h2{
+        text-align: center;
+    }
+    #novita{
+        color: black;
+        padding: 0 25px;
+    }
+/* TABELLE */
+    table{
+        border-bottom: 1px solid #0053cf;
+        border-collapse: collapse; /*questo elimina i bordi delle celle*/
+    }
+    table caption {
+        font-weight: bold;
+        font-style: italic;
+    }
+    thead tr{
+        background-color: #0053cf;
+        color: #ffffff;
+    }
+    tr:nth-child(2n+2){
+        background-color: #cfcdcd;
+    }
+    th{
+        padding: 10px;
+        
+    }
+    td{
+        text-align: center;
+    }
+/* FORM */
+    form{
+        text-align: center;
+    }
+    form fieldset input {
+        border-bottom: 1px Dashed #858585;
+    }
+    fieldset, input{
+        border: none;
+    }
+    button{
+        background-color: #0053cf;
+        border: none;
+        color: #ffffff;
+    }
+    input, button{
+        font-size: 1em;
+        padding:5px 10px;
+    }
+    
+/* ELEMENTI NELL' ASIDE */
+    aside h2{
+        text-align: center;
+    }
+    aside div{
+        background-color: #e7e7e7;
+        border: 1px solid #cacaca;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+    aside a{
+        color: rgb(0, 150, 150);
+        font-weight: bold;
+    }
+    aside p{
+        margin: 0;
+    }
+    .data{
+        text-align: right; /*mette a destra del contenitore*/
+    }
+/* FOOTER */
+    footer{
+        background: rgb(9,109,121);
+        background: linear-gradient(0deg, rgba(9,109,121,1) 0%, rgba(5,140,191,1) 100%);
+        box-shadow: 5px 5px 5px gray;
+        text-align: center;
+        padding:15px 25px;
+        margin: 20px;
+        color: #ffffff;
+    }
+    footer a{
+        color: #be00cf;
+        font-weight: bold;
+    }

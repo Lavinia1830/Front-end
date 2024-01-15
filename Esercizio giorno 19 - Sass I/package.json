@@ -1,0 +1,14 @@
+{
+  "name": "esercizio-girono-19---sass",
+  "version": "1.0.0",
+  "description": "Secondo Progetto in Sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lavinia Baratti",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.69.5"
+  }
+}

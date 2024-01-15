@@ -1,0 +1,10 @@
+.container-colonne{
+  display: flex;
+}
+.colonna-sinistra, .colonna-destra{
+  flex: 1;
+  padding: 20px;
+}
+.selectedBook{
+  border: 1px solid red !important;
+}

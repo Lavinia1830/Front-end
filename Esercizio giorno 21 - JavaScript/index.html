@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-grid.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="my-3" id="petForm">
+            <form>
+                <div class="row g-3">
+                    <div class="col-sm">
+                        <input type="text" class="form-control" placeholder="petName..." aria-label="petName">
+                    </div>
+                    <div class="col-sm">
+                        <input type="text" class="form-control" placeholder="ownerName..." aria-label="ownerName">
+                    </div>
+                    <div class="col-sm">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">cane</option>
+                            <option value="2">gatto</option>
+                            <option value="3">coniglio</option>
+                        </select>
+                    </div>
+                    <div class="col-sm">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">labrador</option>
+                            <option value="2">soriano</option>
+                            <option value="3">nano</option>
+                        </select>
+                    </div>
+                    <div class="col-sm" id="listPet">
+                        <button type="button" class="btn-otline-danger w-100">Add</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

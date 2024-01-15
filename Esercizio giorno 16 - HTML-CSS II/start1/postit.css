@@ -1,0 +1,135 @@
+body{
+    font: 1em 'Indie Flower';
+    overflow-x: hidden;
+}
+.container{
+    background: #666;
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+.box1, 
+.box2, 
+.box3, 
+.box4, 
+.box5, 
+.box6, 
+.box7, 
+.box8{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    margin: 1.5em 1.5em;
+    box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+    transition: transform 0.1s ease-in-out, box-shadow 0.2s ease-out;
+    animation: miaFunc 1s;
+}
+.container h2{
+    font-weight: bold;
+    font-size: 2em;
+}
+.container p{
+    font-size: 1.5em;
+    font-weight: normal;
+}
+.box1{
+    width: 250px;
+    height: 200px;
+    background: rgb(189,189,163);
+    background: linear-gradient(0deg, rgba(189,189,163,1) 0%, rgba(251,252,202,1) 47%);
+    transform: rotate(-4deg);
+    animation-delay: 0.5s;
+}
+.box2{
+    width: 250px;
+    height: 200px;
+    background: rgb(158,181,161);
+    background: linear-gradient(0deg, rgba(158,181,161,1) 0%, rgba(202,252,203,1) 47%);
+    transform: rotate(4deg);
+    animation-delay: 0.4s;
+}
+.box3{
+    width: 250px;
+    height: 200px;
+    background: rgb(139,140,155);
+    background: linear-gradient(0deg, rgba(139,140,155,1) 0%, rgba(201,201,247,1) 47%);
+    transform: rotate(-5deg);
+    animation-delay: 0.3s;
+}
+.box4{
+    width: 250px;
+    height: 200px;
+    background: rgb(158,181,161);
+    background: linear-gradient(0deg, rgba(158,181,161,1) 0%, rgba(202,252,203,1) 47%);
+    transform: rotate(10deg);
+    animation-delay: 0.9s;
+}
+.box5{
+    width: 250px;
+    height: 200px;
+    background: rgb(189,189,163);
+    background: linear-gradient(0deg, rgba(189,189,163,1) 0%, rgba(251,252,202,1) 47%);
+    transform: rotate(-3deg);
+    animation-delay: 0.8s;
+}
+.box6{
+    width: 250px;
+    height: 200px;
+    background: rgb(139,140,155);
+    background: linear-gradient(0deg, rgba(139,140,155,1) 0%, rgba(201,201,247,1) 47%);
+    transform: rotate(-10deg);
+    animation-delay: 0.7s;
+}
+.box7{
+    width: 250px;
+    height: 200px;
+    background: rgb(189,189,163);
+    background: linear-gradient(0deg, rgba(189,189,163,1) 0%, rgba(251,252,202,1) 47%);
+    transform: rotate(-4deg);
+    animation-delay: 0.6s;
+}
+.box8{
+    width: 250px;
+    height: 200px;
+    background: rgb(158,181,161);
+    background: linear-gradient(0deg, rgba(158,181,161,1) 0%, rgba(202,252,203,1) 47%);
+    transform: rotate(3deg);
+    animation-delay: 1s;
+}
+.container div:hover{
+    transform: scale(1.15);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    cursor: pointer;
+
+}
+
+@keyframes miaFunc{
+    0% {
+        opacity: 0;
+        transform: scale(10);
+    }
+    50% {
+        opacity: 0;
+        transform: scale(10);
+    }
+    
+    55% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    
+    65% {
+        opacity: 1;
+        transform: scale(0.9);
+    }
+    70% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+    

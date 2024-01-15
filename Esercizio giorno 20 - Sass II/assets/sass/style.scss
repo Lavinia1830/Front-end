@@ -1,0 +1,29 @@
+@import "overide-bootstrap";
+body{
+    font-family: 'Inter', sans-serif;
+    h1{
+        text-transform: capitalize;
+        font-weight: 600;
+    }
+    main{
+        background: $primary;
+        .container div{
+            p{
+                color: $purple;
+            }
+            a:first-child{
+                background: $green;
+            }
+            a:last-child{
+                background: white;
+            }
+            a{
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 0.7em;
+            }
+        }
+        
+        
+    }
+}
